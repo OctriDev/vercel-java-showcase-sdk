@@ -15,7 +15,7 @@ public class EdgeCache {
     public static class InvalidateByTagsRequest {
 
         private String projectIdOrName;
-        private Object tags;
+        private List<String> tags;
         private String teamId;
         private String slug;
         private CreateDrainResponseVariant0SamplingItemEnvEnum target;
@@ -27,14 +27,14 @@ public class EdgeCache {
         public static class Builder {
             private final InvalidateByTagsRequest request = new InvalidateByTagsRequest();
             public Builder projectIdOrName(String val) { request.projectIdOrName = val; return this; }
-            public Builder tags(Object val) { request.tags = val; return this; }
+            public Builder tags(List<String> val) { request.tags = val; return this; }
             public Builder teamId(String val) { request.teamId = val; return this; }
             public Builder slug(String val) { request.slug = val; return this; }
             public Builder target(CreateDrainResponseVariant0SamplingItemEnvEnum val) { request.target = val; return this; }
             public InvalidateByTagsRequest build() { return request; }
         }
         public String getProjectIdOrName() { return projectIdOrName; }
-        public Object getTags() { return tags; }
+        public List<String> getTags() { return tags; }
         public String getTeamId() { return teamId; }
         public String getSlug() { return slug; }
         public CreateDrainResponseVariant0SamplingItemEnvEnum getTarget() { return target; }
@@ -56,10 +56,12 @@ public class EdgeCache {
      */
     public static Object invalidateByTags(SdkConfig.ClientConfig clientConfig, InvalidateByTagsRequest request, SdkConfig.RequestOptions options) {
         String projectIdOrName = request.getProjectIdOrName();
-        Object tags = request.getTags();
+        List<String> tags = request.getTags();
         String teamId = request.getTeamId();
         String slug = request.getSlug();
         CreateDrainResponseVariant0SamplingItemEnvEnum target = request.getTarget();
+
+        { Validation.LengthOpts __i = new Validation.LengthOpts(); __i.min = 1; __i.max = 16; Validation.validateItems("tags", tags, __i); }
 
         return SdkClient.request(clientConfig, "POST", "/v1/edge-cache/invalidate-by-tags", SdkClient.q("projectIdOrName", SdkClient.queryValue(projectIdOrName, "form", true), "teamId", SdkClient.queryValue(teamId, "form", true), "slug", SdkClient.queryValue(slug, "form", true)), SdkClient.q("tags", tags, "target", SdkClient.omitIfNull(target)), null, new TypeReference<Object>(){}, "invalidateByTags", null, SdkClient.ResponseDecoder.EMPTY, options).data;
     }
@@ -69,7 +71,7 @@ public class EdgeCache {
     public static class DangerouslyDeleteByTagsRequest {
 
         private String projectIdOrName;
-        private Object tags;
+        private List<String> tags;
         private String teamId;
         private String slug;
         private Long revalidationDeadlineSeconds;
@@ -82,7 +84,7 @@ public class EdgeCache {
         public static class Builder {
             private final DangerouslyDeleteByTagsRequest request = new DangerouslyDeleteByTagsRequest();
             public Builder projectIdOrName(String val) { request.projectIdOrName = val; return this; }
-            public Builder tags(Object val) { request.tags = val; return this; }
+            public Builder tags(List<String> val) { request.tags = val; return this; }
             public Builder teamId(String val) { request.teamId = val; return this; }
             public Builder slug(String val) { request.slug = val; return this; }
             public Builder revalidationDeadlineSeconds(Long val) { request.revalidationDeadlineSeconds = val; return this; }
@@ -90,7 +92,7 @@ public class EdgeCache {
             public DangerouslyDeleteByTagsRequest build() { return request; }
         }
         public String getProjectIdOrName() { return projectIdOrName; }
-        public Object getTags() { return tags; }
+        public List<String> getTags() { return tags; }
         public String getTeamId() { return teamId; }
         public String getSlug() { return slug; }
         public Long getRevalidationDeadlineSeconds() { return revalidationDeadlineSeconds; }
@@ -113,11 +115,13 @@ public class EdgeCache {
      */
     public static Object dangerouslyDeleteByTags(SdkConfig.ClientConfig clientConfig, DangerouslyDeleteByTagsRequest request, SdkConfig.RequestOptions options) {
         String projectIdOrName = request.getProjectIdOrName();
-        Object tags = request.getTags();
+        List<String> tags = request.getTags();
         String teamId = request.getTeamId();
         String slug = request.getSlug();
         Long revalidationDeadlineSeconds = request.getRevalidationDeadlineSeconds();
         CreateDrainResponseVariant0SamplingItemEnvEnum target = request.getTarget();
+
+        { Validation.LengthOpts __i = new Validation.LengthOpts(); __i.min = 1; __i.max = 16; Validation.validateItems("tags", tags, __i); }
 
         if (revalidationDeadlineSeconds != null) {
             { Validation.RangeOpts __r = new Validation.RangeOpts(); __r.min = 0d; __r.max = 31536000d; Validation.validateRange("revalidationDeadlineSeconds", revalidationDeadlineSeconds, __r); }

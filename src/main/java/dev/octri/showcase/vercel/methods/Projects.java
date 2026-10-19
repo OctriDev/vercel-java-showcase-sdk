@@ -207,6 +207,27 @@ public class Projects extends ProjectsPart2 {
         }
     }
 
+    public static final class CreateProjectEnvironmentVariablesItemTargetItemEnum {
+        public static final CreateProjectEnvironmentVariablesItemTargetItemEnum PRODUCTION = new CreateProjectEnvironmentVariablesItemTargetItemEnum("production");
+        public static final CreateProjectEnvironmentVariablesItemTargetItemEnum PREVIEW = new CreateProjectEnvironmentVariablesItemTargetItemEnum("preview");
+        public static final CreateProjectEnvironmentVariablesItemTargetItemEnum DEVELOPMENT = new CreateProjectEnvironmentVariablesItemTargetItemEnum("development");
+        private final String value;
+        private CreateProjectEnvironmentVariablesItemTargetItemEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
+        public static CreateProjectEnvironmentVariablesItemTargetItemEnum fromValue(String value) {
+            if ("production".equals(value)) return PRODUCTION;
+            if ("preview".equals(value)) return PREVIEW;
+            if ("development".equals(value)) return DEVELOPMENT;
+            return new CreateProjectEnvironmentVariablesItemTargetItemEnum(value);
+        }
+        @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
+        @java.lang.Override public String toString() { return value; }
+        @java.lang.Override public boolean equals(Object other) {
+            return this == other || (other instanceof CreateProjectEnvironmentVariablesItemTargetItemEnum o && value.equals(o.value));
+        }
+        @java.lang.Override public int hashCode() { return value.hashCode(); }
+    }
+
     /**
      * Type of the ENV variable
      */
@@ -242,7 +263,7 @@ public class Projects extends ProjectsPart2 {
         /**
          * Deployment Target or Targets in which the ENV variable will be used
          */
-        public Object target;
+        public List<CreateProjectEnvironmentVariablesItemTargetItemEnum> target;
         /**
          * Value for the ENV variable
          */

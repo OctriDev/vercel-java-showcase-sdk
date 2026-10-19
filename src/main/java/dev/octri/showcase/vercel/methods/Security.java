@@ -3366,7 +3366,7 @@ public class Security {
         @Nullable public PutFirewallConfigRulesItemActionMitigateRedirectVariant0 redirect;
         @Nullable public String actionDuration;
         @Nullable public Boolean bypassSystem;
-        @Nullable public Object logHeaders;
+        @Nullable public List<String> logHeaders;
         @java.lang.Override
         public String toString() {
             return "PutFirewallConfigRulesItemActionMitigate{"
@@ -3400,7 +3400,7 @@ public class Security {
         @Nullable public String id;
         @Nullable public String description;
         @Nullable public Boolean valid;
-        @Nullable public Object validationErrors;
+        @Nullable public List<String> validationErrors;
         @java.lang.Override
         public String toString() {
             return "PutFirewallConfigRulesItem{"
@@ -6880,7 +6880,7 @@ public class Security {
         private Object rulesets;
         private List<PutFirewallConfigIpsItem> ips;
         private Boolean botIdEnabled;
-        private Object logHeaders;
+        private List<String> logHeaders;
 
         private PutFirewallConfigRequest() {}
 
@@ -6898,7 +6898,7 @@ public class Security {
             public Builder rulesets(Object val) { request.rulesets = val; return this; }
             public Builder ips(List<PutFirewallConfigIpsItem> val) { request.ips = val; return this; }
             public Builder botIdEnabled(Boolean val) { request.botIdEnabled = val; return this; }
-            public Builder logHeaders(Object val) { request.logHeaders = val; return this; }
+            public Builder logHeaders(List<String> val) { request.logHeaders = val; return this; }
             public PutFirewallConfigRequest build() { return request; }
         }
         public String getProjectId() { return projectId; }
@@ -6911,7 +6911,7 @@ public class Security {
         public Object getRulesets() { return rulesets; }
         public List<PutFirewallConfigIpsItem> getIps() { return ips; }
         public Boolean getBotIdEnabled() { return botIdEnabled; }
-        public Object getLogHeaders() { return logHeaders; }
+        public List<String> getLogHeaders() { return logHeaders; }
     }
 
     /**
@@ -6939,7 +6939,7 @@ public class Security {
         Object rulesets = request.getRulesets();
         List<PutFirewallConfigIpsItem> ips = request.getIps();
         Boolean botIdEnabled = request.getBotIdEnabled();
-        Object logHeaders = request.getLogHeaders();
+        List<String> logHeaders = request.getLogHeaders();
 
         return SdkClient.request(clientConfig, "PUT", "/v1/security/firewall/config", SdkClient.q("projectId", SdkClient.queryValue(projectId, "form", true), "teamId", SdkClient.queryValue(teamId, "form", true), "slug", SdkClient.queryValue(slug, "form", true)), SdkClient.q("firewallEnabled", firewallEnabled, "managedRules", SdkClient.omitIfNull(managedRules), "crs", SdkClient.omitIfNull(crs), "rules", SdkClient.omitIfNull(rules), "rulesets", SdkClient.omitIfNull(rulesets), "ips", SdkClient.omitIfNull(ips), "botIdEnabled", SdkClient.omitIfNull(botIdEnabled), "logHeaders", SdkClient.omitIfNull(logHeaders)), null, new TypeReference<PutFirewallConfigResponse>(){}, "putFirewallConfig", null, SdkClient.ResponseDecoder.JSON, options).data;
     }
