@@ -10,9 +10,9 @@ import dev.octri.showcase.vercel.models.teams.InvitedTeamMemberTeamPermissionsIt
 import dev.octri.showcase.vercel.models.teams.ListTeamsResponseTeamsItem;
 import dev.octri.showcase.vercel.models.teams.Team;
 import dev.octri.showcase.vercel.models.teams.TeamDpAccessRequestsModeEnum;
-import dev.octri.showcase.vercel.models.teams.UpdateTeamsRequestDefaultProjectJobs;
-import dev.octri.showcase.vercel.models.teams.UpdateTeamsRequestDeploymentPolicy;
-import dev.octri.showcase.vercel.models.teams.UpdateTeamsRequestNsnbConfig;
+import dev.octri.showcase.vercel.models.teams.UpdateTeamRequestDefaultProjectJobs;
+import dev.octri.showcase.vercel.models.teams.UpdateTeamRequestDeploymentPolicy;
+import dev.octri.showcase.vercel.models.teams.UpdateTeamRequestNsnbConfig;
 import dev.octri.showcase.vercel.SdkConfig;
 import dev.octri.showcase.vercel.SdkClient;
 import dev.octri.showcase.vercel.Validation;
@@ -1115,7 +1115,7 @@ public class Teams {
     }
 
 
-    public static class UpdateTeamsSaml {
+    public static class UpdateTeamSaml {
         /**
          * Require that members of the team use SAML Single Sign-On.
          */
@@ -1126,7 +1126,7 @@ public class Teams {
         @Nullable public Map<String, Object> roles;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsSaml{"
+            return "UpdateTeamSaml{"
                 + "enforced=" + enforced
                 + ", roles=" + roles
                 + "}";
@@ -1134,18 +1134,18 @@ public class Teams {
     }
 
     /**
-     * UpdateTeamsRemoteCaching.
+     * UpdateTeamRemoteCaching.
      * Whether or not remote caching is enabled for the team
      */
 
-    public static class UpdateTeamsRemoteCaching {
+    public static class UpdateTeamRemoteCaching {
         /**
          * Enable or disable remote caching for the team.
          */
         @Nullable public Boolean enabled;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsRemoteCaching{"
+            return "UpdateTeamRemoteCaching{"
                 + "enabled=" + enabled
                 + "}";
         }
@@ -1154,46 +1154,46 @@ public class Teams {
     /**
      * Specify if the password will apply to every Deployment Target or just Preview
      */
-    public static final class UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum {
-        public static final UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum ALL = new UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("all");
-        public static final UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum PREVIEW = new UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("preview");
-        public static final UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS = new UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("prod_deployment_urls_and_all_previews");
-        public static final UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum ALL_EXCEPT_CUSTOM_DOMAINS = new UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("all_except_custom_domains");
+    public static final class UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum {
+        public static final UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum ALL = new UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("all");
+        public static final UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum PREVIEW = new UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("preview");
+        public static final UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS = new UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("prod_deployment_urls_and_all_previews");
+        public static final UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum ALL_EXCEPT_CUSTOM_DOMAINS = new UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum("all_except_custom_domains");
         private final String value;
-        private UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum fromValue(String value) {
+        public static UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum fromValue(String value) {
             if ("all".equals(value)) return ALL;
             if ("preview".equals(value)) return PREVIEW;
             if ("prod_deployment_urls_and_all_previews".equals(value)) return PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS;
             if ("all_except_custom_domains".equals(value)) return ALL_EXCEPT_CUSTOM_DOMAINS;
-            return new UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum(value);
+            return new UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
 
     /**
-     * UpdateTeamsDefaultDeploymentProtectionPasswordProtection.
+     * UpdateTeamDefaultDeploymentProtectionPasswordProtection.
      * Allows to protect project deployments with a password
      */
 
-    public static class UpdateTeamsDefaultDeploymentProtectionPasswordProtection {
+    public static class UpdateTeamDefaultDeploymentProtectionPasswordProtection {
         /**
          * Specify if the password will apply to every Deployment Target or just Preview
          */
-        public UpdateTeamsDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum deploymentType;
+        public UpdateTeamDefaultDeploymentProtectionPasswordProtectionDeploymentTypeEnum deploymentType;
         /**
          * The password that will be used to protect Project Deployments
          */
         @Nullable public String password;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsDefaultDeploymentProtectionPasswordProtection{"
+            return "UpdateTeamDefaultDeploymentProtectionPasswordProtection{"
                 + "deploymentType=" + deploymentType
                 + ", password=" + password
                 + "}";
@@ -1203,104 +1203,104 @@ public class Teams {
     /**
      * Specify if the Vercel Authentication (SSO Protection) will apply to every Deployment Target or just Preview
      */
-    public static final class UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum {
-        public static final UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum ALL = new UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("all");
-        public static final UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum PREVIEW = new UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("preview");
-        public static final UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS = new UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("prod_deployment_urls_and_all_previews");
-        public static final UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum ALL_EXCEPT_CUSTOM_DOMAINS = new UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("all_except_custom_domains");
+    public static final class UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum {
+        public static final UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum ALL = new UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("all");
+        public static final UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum PREVIEW = new UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("preview");
+        public static final UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS = new UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("prod_deployment_urls_and_all_previews");
+        public static final UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum ALL_EXCEPT_CUSTOM_DOMAINS = new UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum("all_except_custom_domains");
         private final String value;
-        private UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum fromValue(String value) {
+        public static UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum fromValue(String value) {
             if ("all".equals(value)) return ALL;
             if ("preview".equals(value)) return PREVIEW;
             if ("prod_deployment_urls_and_all_previews".equals(value)) return PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS;
             if ("all_except_custom_domains".equals(value)) return ALL_EXCEPT_CUSTOM_DOMAINS;
-            return new UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum(value);
+            return new UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
 
     /**
-     * UpdateTeamsDefaultDeploymentProtectionSsoProtection.
+     * UpdateTeamDefaultDeploymentProtectionSsoProtection.
      * Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
      */
 
-    public static class UpdateTeamsDefaultDeploymentProtectionSsoProtection {
+    public static class UpdateTeamDefaultDeploymentProtectionSsoProtection {
         /**
          * Specify if the Vercel Authentication (SSO Protection) will apply to every Deployment Target or just Preview
          */
-        public UpdateTeamsDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum deploymentType;
+        public UpdateTeamDefaultDeploymentProtectionSsoProtectionDeploymentTypeEnum deploymentType;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsDefaultDeploymentProtectionSsoProtection{"
+            return "UpdateTeamDefaultDeploymentProtectionSsoProtection{"
                 + "deploymentType=" + deploymentType
                 + "}";
         }
     }
 
     /**
-     * UpdateTeamsDefaultDeploymentProtection.
+     * UpdateTeamDefaultDeploymentProtection.
      * Default deployment protection settings for new projects.
      */
 
-    public static class UpdateTeamsDefaultDeploymentProtection {
+    public static class UpdateTeamDefaultDeploymentProtection {
         /**
          * Allows to protect project deployments with a password
          */
-        @Nullable public UpdateTeamsDefaultDeploymentProtectionPasswordProtection passwordProtection;
+        @Nullable public UpdateTeamDefaultDeploymentProtectionPasswordProtection passwordProtection;
         /**
          * Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
          */
-        @Nullable public UpdateTeamsDefaultDeploymentProtectionSsoProtection ssoProtection;
+        @Nullable public UpdateTeamDefaultDeploymentProtectionSsoProtection ssoProtection;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsDefaultDeploymentProtection{"
+            return "UpdateTeamDefaultDeploymentProtection{"
                 + "passwordProtection=" + passwordProtection
                 + ", ssoProtection=" + ssoProtection
                 + "}";
         }
     }
 
-    public static final class UpdateTeamsDefaultPassportDeploymentTypeEnum {
-        public static final UpdateTeamsDefaultPassportDeploymentTypeEnum ALL = new UpdateTeamsDefaultPassportDeploymentTypeEnum("all");
-        public static final UpdateTeamsDefaultPassportDeploymentTypeEnum PREVIEW = new UpdateTeamsDefaultPassportDeploymentTypeEnum("preview");
-        public static final UpdateTeamsDefaultPassportDeploymentTypeEnum PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS = new UpdateTeamsDefaultPassportDeploymentTypeEnum("prod_deployment_urls_and_all_previews");
-        public static final UpdateTeamsDefaultPassportDeploymentTypeEnum ALL_EXCEPT_CUSTOM_DOMAINS = new UpdateTeamsDefaultPassportDeploymentTypeEnum("all_except_custom_domains");
+    public static final class UpdateTeamDefaultPassportDeploymentTypeEnum {
+        public static final UpdateTeamDefaultPassportDeploymentTypeEnum ALL = new UpdateTeamDefaultPassportDeploymentTypeEnum("all");
+        public static final UpdateTeamDefaultPassportDeploymentTypeEnum PREVIEW = new UpdateTeamDefaultPassportDeploymentTypeEnum("preview");
+        public static final UpdateTeamDefaultPassportDeploymentTypeEnum PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS = new UpdateTeamDefaultPassportDeploymentTypeEnum("prod_deployment_urls_and_all_previews");
+        public static final UpdateTeamDefaultPassportDeploymentTypeEnum ALL_EXCEPT_CUSTOM_DOMAINS = new UpdateTeamDefaultPassportDeploymentTypeEnum("all_except_custom_domains");
         private final String value;
-        private UpdateTeamsDefaultPassportDeploymentTypeEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamDefaultPassportDeploymentTypeEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsDefaultPassportDeploymentTypeEnum fromValue(String value) {
+        public static UpdateTeamDefaultPassportDeploymentTypeEnum fromValue(String value) {
             if ("all".equals(value)) return ALL;
             if ("preview".equals(value)) return PREVIEW;
             if ("prod_deployment_urls_and_all_previews".equals(value)) return PROD_DEPLOYMENT_URLS_AND_ALL_PREVIEWS;
             if ("all_except_custom_domains".equals(value)) return ALL_EXCEPT_CUSTOM_DOMAINS;
-            return new UpdateTeamsDefaultPassportDeploymentTypeEnum(value);
+            return new UpdateTeamDefaultPassportDeploymentTypeEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsDefaultPassportDeploymentTypeEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamDefaultPassportDeploymentTypeEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
 
     /**
-     * UpdateTeamsDefaultPassport.
+     * UpdateTeamDefaultPassport.
      * Default Passport configuration for new projects.
      */
 
-    public static class UpdateTeamsDefaultPassport {
+    public static class UpdateTeamDefaultPassport {
         public String connectorId;
-        @Nullable public UpdateTeamsDefaultPassportDeploymentTypeEnum deploymentType;
+        @Nullable public UpdateTeamDefaultPassportDeploymentTypeEnum deploymentType;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsDefaultPassport{"
+            return "UpdateTeamDefaultPassport{"
                 + "connectorId=" + connectorId
                 + ", deploymentType=" + deploymentType
                 + "}";
@@ -1310,22 +1310,22 @@ public class Teams {
     /**
      * The time period to keep non-production deployments for
      */
-    public static final class UpdateTeamsDefaultExpirationSettingsExpirationEnum {
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _3Y = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("3y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _2Y = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("2y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _1Y = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("1y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _6M = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("6m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _3M = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("3m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _2M = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("2m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _1M = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("1m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _2W = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("2w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _1W = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("1w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum _1D = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("1d");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationEnum UNLIMITED = new UpdateTeamsDefaultExpirationSettingsExpirationEnum("unlimited");
+    public static final class UpdateTeamDefaultExpirationSettingsExpirationEnum {
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _3Y = new UpdateTeamDefaultExpirationSettingsExpirationEnum("3y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _2Y = new UpdateTeamDefaultExpirationSettingsExpirationEnum("2y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _1Y = new UpdateTeamDefaultExpirationSettingsExpirationEnum("1y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _6M = new UpdateTeamDefaultExpirationSettingsExpirationEnum("6m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _3M = new UpdateTeamDefaultExpirationSettingsExpirationEnum("3m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _2M = new UpdateTeamDefaultExpirationSettingsExpirationEnum("2m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _1M = new UpdateTeamDefaultExpirationSettingsExpirationEnum("1m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _2W = new UpdateTeamDefaultExpirationSettingsExpirationEnum("2w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _1W = new UpdateTeamDefaultExpirationSettingsExpirationEnum("1w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum _1D = new UpdateTeamDefaultExpirationSettingsExpirationEnum("1d");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationEnum UNLIMITED = new UpdateTeamDefaultExpirationSettingsExpirationEnum("unlimited");
         private final String value;
-        private UpdateTeamsDefaultExpirationSettingsExpirationEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamDefaultExpirationSettingsExpirationEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsDefaultExpirationSettingsExpirationEnum fromValue(String value) {
+        public static UpdateTeamDefaultExpirationSettingsExpirationEnum fromValue(String value) {
             if ("3y".equals(value)) return _3Y;
             if ("2y".equals(value)) return _2Y;
             if ("1y".equals(value)) return _1Y;
@@ -1337,12 +1337,12 @@ public class Teams {
             if ("1w".equals(value)) return _1W;
             if ("1d".equals(value)) return _1D;
             if ("unlimited".equals(value)) return UNLIMITED;
-            return new UpdateTeamsDefaultExpirationSettingsExpirationEnum(value);
+            return new UpdateTeamDefaultExpirationSettingsExpirationEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsDefaultExpirationSettingsExpirationEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamDefaultExpirationSettingsExpirationEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
@@ -1350,22 +1350,22 @@ public class Teams {
     /**
      * The time period to keep production deployments for
      */
-    public static final class UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum {
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _3Y = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("3y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _2Y = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("2y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _1Y = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("1y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _6M = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("6m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _3M = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("3m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _2M = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("2m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _1M = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("1m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _2W = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("2w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _1W = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("1w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum _1D = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("1d");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum UNLIMITED = new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum("unlimited");
+    public static final class UpdateTeamDefaultExpirationSettingsExpirationProductionEnum {
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _3Y = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("3y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _2Y = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("2y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _1Y = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("1y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _6M = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("6m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _3M = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("3m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _2M = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("2m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _1M = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("1m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _2W = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("2w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _1W = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("1w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum _1D = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("1d");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationProductionEnum UNLIMITED = new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum("unlimited");
         private final String value;
-        private UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamDefaultExpirationSettingsExpirationProductionEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum fromValue(String value) {
+        public static UpdateTeamDefaultExpirationSettingsExpirationProductionEnum fromValue(String value) {
             if ("3y".equals(value)) return _3Y;
             if ("2y".equals(value)) return _2Y;
             if ("1y".equals(value)) return _1Y;
@@ -1377,12 +1377,12 @@ public class Teams {
             if ("1w".equals(value)) return _1W;
             if ("1d".equals(value)) return _1D;
             if ("unlimited".equals(value)) return UNLIMITED;
-            return new UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum(value);
+            return new UpdateTeamDefaultExpirationSettingsExpirationProductionEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamDefaultExpirationSettingsExpirationProductionEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
@@ -1390,20 +1390,20 @@ public class Teams {
     /**
      * The time period to keep canceled deployments for
      */
-    public static final class UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum {
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _1Y = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("1y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _6M = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("6m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _3M = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("3m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _2M = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("2m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _1M = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("1m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _2W = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("2w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _1W = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("1w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum _1D = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("1d");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum UNLIMITED = new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum("unlimited");
+    public static final class UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum {
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _1Y = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("1y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _6M = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("6m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _3M = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("3m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _2M = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("2m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _1M = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("1m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _2W = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("2w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _1W = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("1w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum _1D = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("1d");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum UNLIMITED = new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum("unlimited");
         private final String value;
-        private UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum fromValue(String value) {
+        public static UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum fromValue(String value) {
             if ("1y".equals(value)) return _1Y;
             if ("6m".equals(value)) return _6M;
             if ("3m".equals(value)) return _3M;
@@ -1413,12 +1413,12 @@ public class Teams {
             if ("1w".equals(value)) return _1W;
             if ("1d".equals(value)) return _1D;
             if ("unlimited".equals(value)) return UNLIMITED;
-            return new UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum(value);
+            return new UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
@@ -1426,20 +1426,20 @@ public class Teams {
     /**
      * The time period to keep errored deployments for
      */
-    public static final class UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum {
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _1Y = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("1y");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _6M = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("6m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _3M = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("3m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _2M = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("2m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _1M = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("1m");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _2W = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("2w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _1W = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("1w");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum _1D = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("1d");
-        public static final UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum UNLIMITED = new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum("unlimited");
+    public static final class UpdateTeamDefaultExpirationSettingsExpirationErroredEnum {
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _1Y = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("1y");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _6M = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("6m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _3M = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("3m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _2M = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("2m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _1M = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("1m");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _2W = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("2w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _1W = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("1w");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum _1D = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("1d");
+        public static final UpdateTeamDefaultExpirationSettingsExpirationErroredEnum UNLIMITED = new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum("unlimited");
         private final String value;
-        private UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamDefaultExpirationSettingsExpirationErroredEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum fromValue(String value) {
+        public static UpdateTeamDefaultExpirationSettingsExpirationErroredEnum fromValue(String value) {
             if ("1y".equals(value)) return _1Y;
             if ("6m".equals(value)) return _6M;
             if ("3m".equals(value)) return _3M;
@@ -1449,34 +1449,34 @@ public class Teams {
             if ("1w".equals(value)) return _1W;
             if ("1d".equals(value)) return _1D;
             if ("unlimited".equals(value)) return UNLIMITED;
-            return new UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum(value);
+            return new UpdateTeamDefaultExpirationSettingsExpirationErroredEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamDefaultExpirationSettingsExpirationErroredEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
 
 
-    public static class UpdateTeamsDefaultExpirationSettings {
+    public static class UpdateTeamDefaultExpirationSettings {
         /**
          * The time period to keep non-production deployments for
          */
-        @Nullable public UpdateTeamsDefaultExpirationSettingsExpirationEnum expiration;
+        @Nullable public UpdateTeamDefaultExpirationSettingsExpirationEnum expiration;
         /**
          * The time period to keep production deployments for
          */
-        @Nullable public UpdateTeamsDefaultExpirationSettingsExpirationProductionEnum expirationProduction;
+        @Nullable public UpdateTeamDefaultExpirationSettingsExpirationProductionEnum expirationProduction;
         /**
          * The time period to keep canceled deployments for
          */
-        @Nullable public UpdateTeamsDefaultExpirationSettingsExpirationCanceledEnum expirationCanceled;
+        @Nullable public UpdateTeamDefaultExpirationSettingsExpirationCanceledEnum expirationCanceled;
         /**
          * The time period to keep errored deployments for
          */
-        @Nullable public UpdateTeamsDefaultExpirationSettingsExpirationErroredEnum expirationErrored;
+        @Nullable public UpdateTeamDefaultExpirationSettingsExpirationErroredEnum expirationErrored;
         /**
          * When true, opts a Pro team out of the upcoming deployment-storage retention reduce. Does not change expiration settings. Unmetered teams also require acknowledgeStorageBilling.
          */
@@ -1487,7 +1487,7 @@ public class Teams {
         @Nullable public Boolean acknowledgeStorageBilling;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsDefaultExpirationSettings{"
+            return "UpdateTeamDefaultExpirationSettings{"
                 + "expiration=" + expiration
                 + ", expirationProduction=" + expirationProduction
                 + ", expirationCanceled=" + expirationCanceled
@@ -1499,72 +1499,72 @@ public class Teams {
     }
 
     /**
-     * UpdateTeamsStrictDeploymentProtectionSettings.
+     * UpdateTeamStrictDeploymentProtectionSettings.
      * When enabled, deployment protection settings require stricter permissions (owner-only).
      */
 
-    public static class UpdateTeamsStrictDeploymentProtectionSettings {
+    public static class UpdateTeamStrictDeploymentProtectionSettings {
         /**
          * Enable or disable strict deployment protection settings.
          */
         public Boolean enabled;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsStrictDeploymentProtectionSettings{"
+            return "UpdateTeamStrictDeploymentProtectionSettings{"
                 + "enabled=" + enabled
                 + "}";
         }
     }
 
     /**
-     * UpdateTeamsStrictShareableLinks.
+     * UpdateTeamStrictShareableLinks.
      * When enabled, creating shareable links requires Owner role.
      */
 
-    public static class UpdateTeamsStrictShareableLinks {
+    public static class UpdateTeamStrictShareableLinks {
         /**
          * Enable or disable requiring Owner role to create shareable links.
          */
         public Boolean enabled;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsStrictShareableLinks{"
+            return "UpdateTeamStrictShareableLinks{"
                 + "enabled=" + enabled
                 + "}";
         }
     }
 
     /**
-     * UpdateTeamsStrictPasswordProtectionSettings.
+     * UpdateTeamStrictPasswordProtectionSettings.
      * When enabled, adding, changing, or removing project password protection requires Owner role.
      */
 
-    public static class UpdateTeamsStrictPasswordProtectionSettings {
+    public static class UpdateTeamStrictPasswordProtectionSettings {
         /**
          * Enable or disable requiring Owner role to change project password protection.
          */
         public Boolean enabled;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsStrictPasswordProtectionSettings{"
+            return "UpdateTeamStrictPasswordProtectionSettings{"
                 + "enabled=" + enabled
                 + "}";
         }
     }
 
     /**
-     * UpdateTeamsStrictConnectors.
+     * UpdateTeamStrictConnectors.
      * When enabled, creating and managing connectors requires Owner role.
      */
 
-    public static class UpdateTeamsStrictConnectors {
+    public static class UpdateTeamStrictConnectors {
         /**
          * Enable or disable requiring Owner role to manage connectors.
          */
         public Boolean enabled;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsStrictConnectors{"
+            return "UpdateTeamStrictConnectors{"
                 + "enabled=" + enabled
                 + "}";
         }
@@ -1573,62 +1573,62 @@ public class Teams {
     /**
      * Default build machine type for new builds: standard, enhanced, turbo, or elastic.
      */
-    public static final class UpdateTeamsResourceConfigBuildMachineDefaultEnum {
-        public static final UpdateTeamsResourceConfigBuildMachineDefaultEnum BASIC = new UpdateTeamsResourceConfigBuildMachineDefaultEnum("basic");
-        public static final UpdateTeamsResourceConfigBuildMachineDefaultEnum ENHANCED = new UpdateTeamsResourceConfigBuildMachineDefaultEnum("enhanced");
-        public static final UpdateTeamsResourceConfigBuildMachineDefaultEnum TURBO = new UpdateTeamsResourceConfigBuildMachineDefaultEnum("turbo");
-        public static final UpdateTeamsResourceConfigBuildMachineDefaultEnum STANDARD = new UpdateTeamsResourceConfigBuildMachineDefaultEnum("standard");
-        public static final UpdateTeamsResourceConfigBuildMachineDefaultEnum ELASTIC = new UpdateTeamsResourceConfigBuildMachineDefaultEnum("elastic");
+    public static final class UpdateTeamResourceConfigBuildMachineDefaultEnum {
+        public static final UpdateTeamResourceConfigBuildMachineDefaultEnum BASIC = new UpdateTeamResourceConfigBuildMachineDefaultEnum("basic");
+        public static final UpdateTeamResourceConfigBuildMachineDefaultEnum ENHANCED = new UpdateTeamResourceConfigBuildMachineDefaultEnum("enhanced");
+        public static final UpdateTeamResourceConfigBuildMachineDefaultEnum TURBO = new UpdateTeamResourceConfigBuildMachineDefaultEnum("turbo");
+        public static final UpdateTeamResourceConfigBuildMachineDefaultEnum STANDARD = new UpdateTeamResourceConfigBuildMachineDefaultEnum("standard");
+        public static final UpdateTeamResourceConfigBuildMachineDefaultEnum ELASTIC = new UpdateTeamResourceConfigBuildMachineDefaultEnum("elastic");
         private final String value;
-        private UpdateTeamsResourceConfigBuildMachineDefaultEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
+        private UpdateTeamResourceConfigBuildMachineDefaultEnum(String value) { this.value = java.util.Objects.requireNonNull(value, "value"); }
         @com.fasterxml.jackson.annotation.JsonCreator(mode = com.fasterxml.jackson.annotation.JsonCreator.Mode.DELEGATING)
-        public static UpdateTeamsResourceConfigBuildMachineDefaultEnum fromValue(String value) {
+        public static UpdateTeamResourceConfigBuildMachineDefaultEnum fromValue(String value) {
             if ("basic".equals(value)) return BASIC;
             if ("enhanced".equals(value)) return ENHANCED;
             if ("turbo".equals(value)) return TURBO;
             if ("standard".equals(value)) return STANDARD;
             if ("elastic".equals(value)) return ELASTIC;
-            return new UpdateTeamsResourceConfigBuildMachineDefaultEnum(value);
+            return new UpdateTeamResourceConfigBuildMachineDefaultEnum(value);
         }
         @com.fasterxml.jackson.annotation.JsonValue public String getValue() { return value; }
         @java.lang.Override public String toString() { return value; }
         @java.lang.Override public boolean equals(Object other) {
-            return this == other || (other instanceof UpdateTeamsResourceConfigBuildMachineDefaultEnum o && value.equals(o.value));
+            return this == other || (other instanceof UpdateTeamResourceConfigBuildMachineDefaultEnum o && value.equals(o.value));
         }
         @java.lang.Override public int hashCode() { return value.hashCode(); }
     }
 
     /**
-     * UpdateTeamsResourceConfigBuildMachine.
+     * UpdateTeamResourceConfigBuildMachine.
      * Build machine configuration.
      */
 
-    public static class UpdateTeamsResourceConfigBuildMachine {
+    public static class UpdateTeamResourceConfigBuildMachine {
         /**
          * Default build machine type for new builds: standard, enhanced, turbo, or elastic.
          */
-        @Nullable @JsonProperty("default") public UpdateTeamsResourceConfigBuildMachineDefaultEnum default_;
+        @Nullable @JsonProperty("default") public UpdateTeamResourceConfigBuildMachineDefaultEnum default_;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsResourceConfigBuildMachine{"
+            return "UpdateTeamResourceConfigBuildMachine{"
                 + "default_=" + default_
                 + "}";
         }
     }
 
     /**
-     * UpdateTeamsResourceConfig.
+     * UpdateTeamResourceConfig.
      * Resource configuration for the team.
      */
 
-    public static class UpdateTeamsResourceConfig {
+    public static class UpdateTeamResourceConfig {
         /**
          * Build machine configuration.
          */
-        @Nullable public UpdateTeamsResourceConfigBuildMachine buildMachine;
+        @Nullable public UpdateTeamResourceConfigBuildMachine buildMachine;
         @java.lang.Override
         public String toString() {
-            return "UpdateTeamsResourceConfig{"
+            return "UpdateTeamResourceConfig{"
                 + "buildMachine=" + buildMachine
                 + "}";
         }
@@ -2230,7 +2230,7 @@ public class Teams {
 
 
 
-    public static class UpdateTeamsRequest {
+    public static class UpdateTeamRequest {
 
         private String teamId;
         private String slug;
@@ -2240,36 +2240,36 @@ public class Teams {
         private String name;
         private SdkClient.OptionalValue<String> previewDeploymentSuffix;
         private Boolean regenerateInviteCode;
-        private UpdateTeamsSaml saml;
+        private UpdateTeamSaml saml;
         private String slug_2;
         private String enablePreviewFeedback;
         private String enableProductionFeedback;
         private String sensitiveEnvironmentVariablePolicy;
         private String disjunctiveProductionSecretPolicy;
-        private UpdateTeamsRemoteCaching remoteCaching;
+        private UpdateTeamRemoteCaching remoteCaching;
         private Boolean hideIpAddresses;
         private Boolean hideIpAddressesInLogDrains;
         private TeamDpAccessRequestsModeEnum dpAccessRequestsMode;
         private Boolean requireVerifiedCommits;
         private Boolean disableRepositoryDispatchEvents;
-        private UpdateTeamsDefaultDeploymentProtection defaultDeploymentProtection;
-        private SdkClient.OptionalValue<UpdateTeamsDefaultPassport> defaultPassport;
-        private UpdateTeamsDefaultExpirationSettings defaultExpirationSettings;
-        private UpdateTeamsRequestDeploymentPolicy deploymentPolicy;
-        private UpdateTeamsStrictDeploymentProtectionSettings strictDeploymentProtectionSettings;
-        private UpdateTeamsStrictShareableLinks strictShareableLinks;
-        private UpdateTeamsStrictPasswordProtectionSettings strictPasswordProtectionSettings;
-        private UpdateTeamsStrictConnectors strictConnectors;
-        private UpdateTeamsRequestNsnbConfig nsnbConfig;
-        private UpdateTeamsRequestDefaultProjectJobs defaultProjectJobs;
-        private UpdateTeamsResourceConfig resourceConfig;
+        private UpdateTeamDefaultDeploymentProtection defaultDeploymentProtection;
+        private SdkClient.OptionalValue<UpdateTeamDefaultPassport> defaultPassport;
+        private UpdateTeamDefaultExpirationSettings defaultExpirationSettings;
+        private UpdateTeamRequestDeploymentPolicy deploymentPolicy;
+        private UpdateTeamStrictDeploymentProtectionSettings strictDeploymentProtectionSettings;
+        private UpdateTeamStrictShareableLinks strictShareableLinks;
+        private UpdateTeamStrictPasswordProtectionSettings strictPasswordProtectionSettings;
+        private UpdateTeamStrictConnectors strictConnectors;
+        private UpdateTeamRequestNsnbConfig nsnbConfig;
+        private UpdateTeamRequestDefaultProjectJobs defaultProjectJobs;
+        private UpdateTeamResourceConfig resourceConfig;
 
-        private UpdateTeamsRequest() {}
+        private UpdateTeamRequest() {}
 
         public static Builder builder() { return new Builder(); }
 
         public static class Builder {
-            private final UpdateTeamsRequest request = new UpdateTeamsRequest();
+            private final UpdateTeamRequest request = new UpdateTeamRequest();
             public Builder teamId(String val) { request.teamId = val; return this; }
             public Builder slug(String val) { request.slug = val; return this; }
             public Builder avatar(SdkClient.OptionalValue<String> val) { request.avatar = val; return this; }
@@ -2278,30 +2278,30 @@ public class Teams {
             public Builder name(String val) { request.name = val; return this; }
             public Builder previewDeploymentSuffix(SdkClient.OptionalValue<String> val) { request.previewDeploymentSuffix = val; return this; }
             public Builder regenerateInviteCode(Boolean val) { request.regenerateInviteCode = val; return this; }
-            public Builder saml(UpdateTeamsSaml val) { request.saml = val; return this; }
+            public Builder saml(UpdateTeamSaml val) { request.saml = val; return this; }
             public Builder slug_2(String val) { request.slug_2 = val; return this; }
             public Builder enablePreviewFeedback(String val) { request.enablePreviewFeedback = val; return this; }
             public Builder enableProductionFeedback(String val) { request.enableProductionFeedback = val; return this; }
             public Builder sensitiveEnvironmentVariablePolicy(String val) { request.sensitiveEnvironmentVariablePolicy = val; return this; }
             public Builder disjunctiveProductionSecretPolicy(String val) { request.disjunctiveProductionSecretPolicy = val; return this; }
-            public Builder remoteCaching(UpdateTeamsRemoteCaching val) { request.remoteCaching = val; return this; }
+            public Builder remoteCaching(UpdateTeamRemoteCaching val) { request.remoteCaching = val; return this; }
             public Builder hideIpAddresses(Boolean val) { request.hideIpAddresses = val; return this; }
             public Builder hideIpAddressesInLogDrains(Boolean val) { request.hideIpAddressesInLogDrains = val; return this; }
             public Builder dpAccessRequestsMode(TeamDpAccessRequestsModeEnum val) { request.dpAccessRequestsMode = val; return this; }
             public Builder requireVerifiedCommits(Boolean val) { request.requireVerifiedCommits = val; return this; }
             public Builder disableRepositoryDispatchEvents(Boolean val) { request.disableRepositoryDispatchEvents = val; return this; }
-            public Builder defaultDeploymentProtection(UpdateTeamsDefaultDeploymentProtection val) { request.defaultDeploymentProtection = val; return this; }
-            public Builder defaultPassport(SdkClient.OptionalValue<UpdateTeamsDefaultPassport> val) { request.defaultPassport = val; return this; }
-            public Builder defaultExpirationSettings(UpdateTeamsDefaultExpirationSettings val) { request.defaultExpirationSettings = val; return this; }
-            public Builder deploymentPolicy(UpdateTeamsRequestDeploymentPolicy val) { request.deploymentPolicy = val; return this; }
-            public Builder strictDeploymentProtectionSettings(UpdateTeamsStrictDeploymentProtectionSettings val) { request.strictDeploymentProtectionSettings = val; return this; }
-            public Builder strictShareableLinks(UpdateTeamsStrictShareableLinks val) { request.strictShareableLinks = val; return this; }
-            public Builder strictPasswordProtectionSettings(UpdateTeamsStrictPasswordProtectionSettings val) { request.strictPasswordProtectionSettings = val; return this; }
-            public Builder strictConnectors(UpdateTeamsStrictConnectors val) { request.strictConnectors = val; return this; }
-            public Builder nsnbConfig(UpdateTeamsRequestNsnbConfig val) { request.nsnbConfig = val; return this; }
-            public Builder defaultProjectJobs(UpdateTeamsRequestDefaultProjectJobs val) { request.defaultProjectJobs = val; return this; }
-            public Builder resourceConfig(UpdateTeamsResourceConfig val) { request.resourceConfig = val; return this; }
-            public UpdateTeamsRequest build() { return request; }
+            public Builder defaultDeploymentProtection(UpdateTeamDefaultDeploymentProtection val) { request.defaultDeploymentProtection = val; return this; }
+            public Builder defaultPassport(SdkClient.OptionalValue<UpdateTeamDefaultPassport> val) { request.defaultPassport = val; return this; }
+            public Builder defaultExpirationSettings(UpdateTeamDefaultExpirationSettings val) { request.defaultExpirationSettings = val; return this; }
+            public Builder deploymentPolicy(UpdateTeamRequestDeploymentPolicy val) { request.deploymentPolicy = val; return this; }
+            public Builder strictDeploymentProtectionSettings(UpdateTeamStrictDeploymentProtectionSettings val) { request.strictDeploymentProtectionSettings = val; return this; }
+            public Builder strictShareableLinks(UpdateTeamStrictShareableLinks val) { request.strictShareableLinks = val; return this; }
+            public Builder strictPasswordProtectionSettings(UpdateTeamStrictPasswordProtectionSettings val) { request.strictPasswordProtectionSettings = val; return this; }
+            public Builder strictConnectors(UpdateTeamStrictConnectors val) { request.strictConnectors = val; return this; }
+            public Builder nsnbConfig(UpdateTeamRequestNsnbConfig val) { request.nsnbConfig = val; return this; }
+            public Builder defaultProjectJobs(UpdateTeamRequestDefaultProjectJobs val) { request.defaultProjectJobs = val; return this; }
+            public Builder resourceConfig(UpdateTeamResourceConfig val) { request.resourceConfig = val; return this; }
+            public UpdateTeamRequest build() { return request; }
         }
         public String getTeamId() { return teamId; }
         public String getSlug() { return slug; }
@@ -2311,29 +2311,29 @@ public class Teams {
         public String getName() { return name; }
         public SdkClient.OptionalValue<String> getPreviewDeploymentSuffix() { return previewDeploymentSuffix; }
         public Boolean getRegenerateInviteCode() { return regenerateInviteCode; }
-        public UpdateTeamsSaml getSaml() { return saml; }
+        public UpdateTeamSaml getSaml() { return saml; }
         public String getSlug2() { return slug_2; }
         public String getEnablePreviewFeedback() { return enablePreviewFeedback; }
         public String getEnableProductionFeedback() { return enableProductionFeedback; }
         public String getSensitiveEnvironmentVariablePolicy() { return sensitiveEnvironmentVariablePolicy; }
         public String getDisjunctiveProductionSecretPolicy() { return disjunctiveProductionSecretPolicy; }
-        public UpdateTeamsRemoteCaching getRemoteCaching() { return remoteCaching; }
+        public UpdateTeamRemoteCaching getRemoteCaching() { return remoteCaching; }
         public Boolean getHideIpAddresses() { return hideIpAddresses; }
         public Boolean getHideIpAddressesInLogDrains() { return hideIpAddressesInLogDrains; }
         public TeamDpAccessRequestsModeEnum getDpAccessRequestsMode() { return dpAccessRequestsMode; }
         public Boolean getRequireVerifiedCommits() { return requireVerifiedCommits; }
         public Boolean getDisableRepositoryDispatchEvents() { return disableRepositoryDispatchEvents; }
-        public UpdateTeamsDefaultDeploymentProtection getDefaultDeploymentProtection() { return defaultDeploymentProtection; }
-        public SdkClient.OptionalValue<UpdateTeamsDefaultPassport> getDefaultPassport() { return defaultPassport; }
-        public UpdateTeamsDefaultExpirationSettings getDefaultExpirationSettings() { return defaultExpirationSettings; }
-        public UpdateTeamsRequestDeploymentPolicy getDeploymentPolicy() { return deploymentPolicy; }
-        public UpdateTeamsStrictDeploymentProtectionSettings getStrictDeploymentProtectionSettings() { return strictDeploymentProtectionSettings; }
-        public UpdateTeamsStrictShareableLinks getStrictShareableLinks() { return strictShareableLinks; }
-        public UpdateTeamsStrictPasswordProtectionSettings getStrictPasswordProtectionSettings() { return strictPasswordProtectionSettings; }
-        public UpdateTeamsStrictConnectors getStrictConnectors() { return strictConnectors; }
-        public UpdateTeamsRequestNsnbConfig getNsnbConfig() { return nsnbConfig; }
-        public UpdateTeamsRequestDefaultProjectJobs getDefaultProjectJobs() { return defaultProjectJobs; }
-        public UpdateTeamsResourceConfig getResourceConfig() { return resourceConfig; }
+        public UpdateTeamDefaultDeploymentProtection getDefaultDeploymentProtection() { return defaultDeploymentProtection; }
+        public SdkClient.OptionalValue<UpdateTeamDefaultPassport> getDefaultPassport() { return defaultPassport; }
+        public UpdateTeamDefaultExpirationSettings getDefaultExpirationSettings() { return defaultExpirationSettings; }
+        public UpdateTeamRequestDeploymentPolicy getDeploymentPolicy() { return deploymentPolicy; }
+        public UpdateTeamStrictDeploymentProtectionSettings getStrictDeploymentProtectionSettings() { return strictDeploymentProtectionSettings; }
+        public UpdateTeamStrictShareableLinks getStrictShareableLinks() { return strictShareableLinks; }
+        public UpdateTeamStrictPasswordProtectionSettings getStrictPasswordProtectionSettings() { return strictPasswordProtectionSettings; }
+        public UpdateTeamStrictConnectors getStrictConnectors() { return strictConnectors; }
+        public UpdateTeamRequestNsnbConfig getNsnbConfig() { return nsnbConfig; }
+        public UpdateTeamRequestDefaultProjectJobs getDefaultProjectJobs() { return defaultProjectJobs; }
+        public UpdateTeamResourceConfig getResourceConfig() { return resourceConfig; }
     }
 
     /**
@@ -2341,8 +2341,8 @@ public class Teams {
      *
      * Update the information of a Team specified by the `teamId` parameter. The request body should contain the information that will be updated on the Team.
      */
-    public static Team updateTeams(SdkConfig.ClientConfig clientConfig, UpdateTeamsRequest request) {
-        return updateTeams(clientConfig, request, null);
+    public static Team updateTeam(SdkConfig.ClientConfig clientConfig, UpdateTeamRequest request) {
+        return updateTeam(clientConfig, request, null);
     }
 
     /**
@@ -2350,7 +2350,7 @@ public class Teams {
      *
      * Update the information of a Team specified by the `teamId` parameter. The request body should contain the information that will be updated on the Team.
      */
-    public static Team updateTeams(SdkConfig.ClientConfig clientConfig, UpdateTeamsRequest request, SdkConfig.RequestOptions options) {
+    public static Team updateTeam(SdkConfig.ClientConfig clientConfig, UpdateTeamRequest request, SdkConfig.RequestOptions options) {
         String teamId = request.getTeamId();
         String slug = request.getSlug();
         SdkClient.OptionalValue<String> avatar = request.getAvatar();
@@ -2359,29 +2359,29 @@ public class Teams {
         String name = request.getName();
         SdkClient.OptionalValue<String> previewDeploymentSuffix = request.getPreviewDeploymentSuffix();
         Boolean regenerateInviteCode = request.getRegenerateInviteCode();
-        UpdateTeamsSaml saml = request.getSaml();
+        UpdateTeamSaml saml = request.getSaml();
         String slug_2 = request.getSlug2();
         String enablePreviewFeedback = request.getEnablePreviewFeedback();
         String enableProductionFeedback = request.getEnableProductionFeedback();
         String sensitiveEnvironmentVariablePolicy = request.getSensitiveEnvironmentVariablePolicy();
         String disjunctiveProductionSecretPolicy = request.getDisjunctiveProductionSecretPolicy();
-        UpdateTeamsRemoteCaching remoteCaching = request.getRemoteCaching();
+        UpdateTeamRemoteCaching remoteCaching = request.getRemoteCaching();
         Boolean hideIpAddresses = request.getHideIpAddresses();
         Boolean hideIpAddressesInLogDrains = request.getHideIpAddressesInLogDrains();
         TeamDpAccessRequestsModeEnum dpAccessRequestsMode = request.getDpAccessRequestsMode();
         Boolean requireVerifiedCommits = request.getRequireVerifiedCommits();
         Boolean disableRepositoryDispatchEvents = request.getDisableRepositoryDispatchEvents();
-        UpdateTeamsDefaultDeploymentProtection defaultDeploymentProtection = request.getDefaultDeploymentProtection();
-        SdkClient.OptionalValue<UpdateTeamsDefaultPassport> defaultPassport = request.getDefaultPassport();
-        UpdateTeamsDefaultExpirationSettings defaultExpirationSettings = request.getDefaultExpirationSettings();
-        UpdateTeamsRequestDeploymentPolicy deploymentPolicy = request.getDeploymentPolicy();
-        UpdateTeamsStrictDeploymentProtectionSettings strictDeploymentProtectionSettings = request.getStrictDeploymentProtectionSettings();
-        UpdateTeamsStrictShareableLinks strictShareableLinks = request.getStrictShareableLinks();
-        UpdateTeamsStrictPasswordProtectionSettings strictPasswordProtectionSettings = request.getStrictPasswordProtectionSettings();
-        UpdateTeamsStrictConnectors strictConnectors = request.getStrictConnectors();
-        UpdateTeamsRequestNsnbConfig nsnbConfig = request.getNsnbConfig();
-        UpdateTeamsRequestDefaultProjectJobs defaultProjectJobs = request.getDefaultProjectJobs();
-        UpdateTeamsResourceConfig resourceConfig = request.getResourceConfig();
+        UpdateTeamDefaultDeploymentProtection defaultDeploymentProtection = request.getDefaultDeploymentProtection();
+        SdkClient.OptionalValue<UpdateTeamDefaultPassport> defaultPassport = request.getDefaultPassport();
+        UpdateTeamDefaultExpirationSettings defaultExpirationSettings = request.getDefaultExpirationSettings();
+        UpdateTeamRequestDeploymentPolicy deploymentPolicy = request.getDeploymentPolicy();
+        UpdateTeamStrictDeploymentProtectionSettings strictDeploymentProtectionSettings = request.getStrictDeploymentProtectionSettings();
+        UpdateTeamStrictShareableLinks strictShareableLinks = request.getStrictShareableLinks();
+        UpdateTeamStrictPasswordProtectionSettings strictPasswordProtectionSettings = request.getStrictPasswordProtectionSettings();
+        UpdateTeamStrictConnectors strictConnectors = request.getStrictConnectors();
+        UpdateTeamRequestNsnbConfig nsnbConfig = request.getNsnbConfig();
+        UpdateTeamRequestDefaultProjectJobs defaultProjectJobs = request.getDefaultProjectJobs();
+        UpdateTeamResourceConfig resourceConfig = request.getResourceConfig();
 
         if (avatar != null && avatar.isPresent() && avatar.value() != null) {
             { Validation.LengthOpts __l = new Validation.LengthOpts(); __l.max = 40; Validation.validateLength("avatar", avatar.value(), __l); }
@@ -2396,7 +2396,7 @@ public class Teams {
             { Validation.LengthOpts __l = new Validation.LengthOpts(); __l.max = 256; Validation.validateLength("name", name, __l); }
         }
 
-        return SdkClient.request(clientConfig, "PATCH", "/v2/teams/" + SdkClient.encodePathSegment(teamId) + "", SdkClient.q("slug", SdkClient.queryValue(slug, "form", true)), SdkClient.q("avatar", avatar, "description", SdkClient.omitIfNull(description), "emailDomain", emailDomain, "name", SdkClient.omitIfNull(name), "previewDeploymentSuffix", previewDeploymentSuffix, "regenerateInviteCode", SdkClient.omitIfNull(regenerateInviteCode), "saml", SdkClient.omitIfNull(saml), "slug", SdkClient.omitIfNull(slug_2), "enablePreviewFeedback", SdkClient.omitIfNull(enablePreviewFeedback), "enableProductionFeedback", SdkClient.omitIfNull(enableProductionFeedback), "sensitiveEnvironmentVariablePolicy", SdkClient.omitIfNull(sensitiveEnvironmentVariablePolicy), "disjunctiveProductionSecretPolicy", SdkClient.omitIfNull(disjunctiveProductionSecretPolicy), "remoteCaching", SdkClient.omitIfNull(remoteCaching), "hideIpAddresses", SdkClient.omitIfNull(hideIpAddresses), "hideIpAddressesInLogDrains", SdkClient.omitIfNull(hideIpAddressesInLogDrains), "dpAccessRequestsMode", SdkClient.omitIfNull(dpAccessRequestsMode), "requireVerifiedCommits", SdkClient.omitIfNull(requireVerifiedCommits), "disableRepositoryDispatchEvents", SdkClient.omitIfNull(disableRepositoryDispatchEvents), "defaultDeploymentProtection", SdkClient.omitIfNull(defaultDeploymentProtection), "defaultPassport", defaultPassport, "defaultExpirationSettings", SdkClient.omitIfNull(defaultExpirationSettings), "deploymentPolicy", SdkClient.omitIfNull(deploymentPolicy), "strictDeploymentProtectionSettings", SdkClient.omitIfNull(strictDeploymentProtectionSettings), "strictShareableLinks", SdkClient.omitIfNull(strictShareableLinks), "strictPasswordProtectionSettings", SdkClient.omitIfNull(strictPasswordProtectionSettings), "strictConnectors", SdkClient.omitIfNull(strictConnectors), "nsnbConfig", SdkClient.omitIfNull(nsnbConfig), "defaultProjectJobs", SdkClient.omitIfNull(defaultProjectJobs), "resourceConfig", SdkClient.omitIfNull(resourceConfig)), null, new TypeReference<Team>(){}, "updateTeams", null, SdkClient.ResponseDecoder.JSON, options).data;
+        return SdkClient.request(clientConfig, "PATCH", "/v2/teams/" + SdkClient.encodePathSegment(teamId) + "", SdkClient.q("slug", SdkClient.queryValue(slug, "form", true)), SdkClient.q("avatar", avatar, "description", SdkClient.omitIfNull(description), "emailDomain", emailDomain, "name", SdkClient.omitIfNull(name), "previewDeploymentSuffix", previewDeploymentSuffix, "regenerateInviteCode", SdkClient.omitIfNull(regenerateInviteCode), "saml", SdkClient.omitIfNull(saml), "slug", SdkClient.omitIfNull(slug_2), "enablePreviewFeedback", SdkClient.omitIfNull(enablePreviewFeedback), "enableProductionFeedback", SdkClient.omitIfNull(enableProductionFeedback), "sensitiveEnvironmentVariablePolicy", SdkClient.omitIfNull(sensitiveEnvironmentVariablePolicy), "disjunctiveProductionSecretPolicy", SdkClient.omitIfNull(disjunctiveProductionSecretPolicy), "remoteCaching", SdkClient.omitIfNull(remoteCaching), "hideIpAddresses", SdkClient.omitIfNull(hideIpAddresses), "hideIpAddressesInLogDrains", SdkClient.omitIfNull(hideIpAddressesInLogDrains), "dpAccessRequestsMode", SdkClient.omitIfNull(dpAccessRequestsMode), "requireVerifiedCommits", SdkClient.omitIfNull(requireVerifiedCommits), "disableRepositoryDispatchEvents", SdkClient.omitIfNull(disableRepositoryDispatchEvents), "defaultDeploymentProtection", SdkClient.omitIfNull(defaultDeploymentProtection), "defaultPassport", defaultPassport, "defaultExpirationSettings", SdkClient.omitIfNull(defaultExpirationSettings), "deploymentPolicy", SdkClient.omitIfNull(deploymentPolicy), "strictDeploymentProtectionSettings", SdkClient.omitIfNull(strictDeploymentProtectionSettings), "strictShareableLinks", SdkClient.omitIfNull(strictShareableLinks), "strictPasswordProtectionSettings", SdkClient.omitIfNull(strictPasswordProtectionSettings), "strictConnectors", SdkClient.omitIfNull(strictConnectors), "nsnbConfig", SdkClient.omitIfNull(nsnbConfig), "defaultProjectJobs", SdkClient.omitIfNull(defaultProjectJobs), "resourceConfig", SdkClient.omitIfNull(resourceConfig)), null, new TypeReference<Team>(){}, "updateTeam", null, SdkClient.ResponseDecoder.JSON, options).data;
     }
 
 

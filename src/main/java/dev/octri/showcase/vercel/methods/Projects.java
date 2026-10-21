@@ -84,7 +84,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-public class Projects extends ProjectsPart2 {
+public class Projects extends ProjectsUnpauseOperations {
 
 
     public static class GetProjectTraceResponseTraceSpansItemEventsItem {

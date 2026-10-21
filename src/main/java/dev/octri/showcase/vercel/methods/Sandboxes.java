@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-public class Sandboxes extends SandboxesPart2 {
+public class Sandboxes extends SandboxesForkOperations {
 
 
     public static class ListNamedSandboxesResponsePagination {

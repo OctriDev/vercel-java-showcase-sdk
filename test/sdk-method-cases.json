@@ -8,7 +8,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsTransferRequestOperations",
       "arguments": {
         "code": "code",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -202,7 +202,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsDomainsOperations",
       "arguments": {
         "idOrName": "Example Name",
         "name": "www.example.com",
@@ -310,7 +310,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -989,7 +989,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsEnvOperations",
       "arguments": {
         "idOrName": "prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA",
         "ids": [
@@ -2033,7 +2033,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -2740,7 +2740,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrBlobsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -5461,7 +5461,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsOperations",
       "arguments": {
         "name": "a-project-name",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -7449,7 +7449,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsEnvOperations",
       "arguments": {
         "idOrName": "prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA",
         "body": {
@@ -7552,7 +7552,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsTransferRequestOperations",
       "arguments": {
         "idOrName": "Example Name",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -7626,7 +7626,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "name": "nginx",
@@ -7668,7 +7668,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesForkOperations",
       "arguments": {
         "name": "a",
         "projectId": "project-1",
@@ -7943,7 +7943,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesForkOperations",
       "arguments": {
         "name": "a",
         "projectId": "project-1",
@@ -8214,7 +8214,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -8318,7 +8318,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -8422,7 +8422,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesOperations",
       "arguments": {
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
         "slug": "my-team-url-slug",
@@ -8710,7 +8710,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesOperations",
       "arguments": {
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
         "slug": "my-team-url-slug",
@@ -8995,7 +8995,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesOperations",
       "arguments": {
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
         "slug": "my-team-url-slug",
@@ -9569,7 +9569,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "path": "src/components",
@@ -9875,7 +9875,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsTracesOperations",
       "arguments": {
         "projectId": "project-1",
         "hostname": "Example Name",
@@ -10423,7 +10423,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrBlobsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -10456,7 +10456,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrManifestsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -10820,7 +10820,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesDrivesOperations",
       "arguments": {
         "name": "workspace",
         "projectId": "prj_abc123",
@@ -11289,7 +11289,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsOperations",
       "arguments": {
         "idOrName": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -11319,7 +11319,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsAvatarOperations",
       "arguments": {
         "idOrName": "Example Name",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -13197,7 +13197,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -13230,7 +13230,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -13345,7 +13345,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesOperations",
       "arguments": {
         "name": "my-sandbox",
         "projectId": "project-1",
@@ -13498,7 +13498,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSnapshotsOperations",
       "arguments": {
         "snapshotId": "snap_1234567890123456789012345678",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -13766,7 +13766,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsEnvOperations",
       "arguments": {
         "idOrName": "prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA",
         "id": "XMbOEya1gUUO1ir4",
@@ -14227,7 +14227,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "duration": 300000,
@@ -14312,7 +14312,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsEnvOperations",
       "arguments": {
         "idOrName": "prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA",
         "gitBranch": "feature-1",
@@ -14412,7 +14412,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesDrivesOperations",
       "arguments": {
         "name": "workspace",
         "name_2": "workspace-fork",
@@ -15499,7 +15499,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrBlobsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -15532,7 +15532,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrTagsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -17861,7 +17861,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesDrivesOperations",
       "arguments": {
         "nameOrId": "workspace",
         "projectId": "prj_abc123",
@@ -21180,7 +21180,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesOperations",
       "arguments": {
         "name": "my-sandbox",
         "projectId": "prj_abc123",
@@ -21437,7 +21437,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesDrivesOperations",
       "arguments": {
         "name": "workspace",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -21635,7 +21635,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsDomainsOperations",
       "arguments": {
         "idOrName": "Example Name",
         "domain": "www.example.com",
@@ -21687,7 +21687,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsEnvOperations",
       "arguments": {
         "idOrName": "prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA",
         "id": "id-1",
@@ -21788,7 +21788,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsOperations",
       "arguments": {
         "idOrName": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -23590,7 +23590,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsTokenOperations",
       "arguments": {
         "idOrName": "my-project, <prj_id>",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -23625,7 +23625,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsTracesOperations",
       "arguments": {
         "projectId": "prj_123",
         "requestId": "cli-req-abc",
@@ -23806,7 +23806,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -23848,7 +23848,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -23914,7 +23914,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -24168,7 +24168,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrOperations",
       "arguments": {},
       "wireNames": {},
       "argumentOrder": [],
@@ -25204,7 +25204,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -25294,7 +25294,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "cmdId": "cmd_abc123",
@@ -25344,7 +25344,7 @@
         "sandboxes"
       ],
       "mode": "stream",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "cmdId": "cmd_abc123",
@@ -25383,7 +25383,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSnapshotsOperations",
       "arguments": {
         "snapshotId": "snap_1234567890123456789012345678",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -27066,7 +27066,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrBlobsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -27099,7 +27099,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrManifestsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -27478,7 +27478,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "cmdId": "cmd_abc123",
         "sessionId": "sbx_abc123",
@@ -29012,7 +29012,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesDrivesOperations",
       "arguments": {
         "projectId": "prj_abc123",
         "limit": 20,
@@ -29869,7 +29869,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesOperations",
       "arguments": {
         "project": "prj_abc123",
         "limit": 20,
@@ -30272,7 +30272,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsOperations",
       "arguments": {
         "from": "from",
         "since": 1540095775941,
@@ -31005,7 +31005,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsDomainsOperations",
       "arguments": {
         "idOrName": "Example Name",
         "production": "false",
@@ -31096,7 +31096,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsPromoteOperations",
       "arguments": {
         "projectId": "project-1",
         "limit": 20,
@@ -31138,7 +31138,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "limit": 1,
@@ -31186,7 +31186,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -31247,7 +31247,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -31296,7 +31296,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -31358,7 +31358,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -31404,7 +31404,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "project": "prj_abc123",
         "name": "my-sandbox",
@@ -31446,7 +31446,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSnapshotsOperations",
       "arguments": {
         "project": "prj_abc123",
         "name": "my-sandbox",
@@ -32828,7 +32828,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsDomainsOperations",
       "arguments": {
         "idOrName": "Example Name",
         "domain": "www.example.com",
@@ -33009,7 +33009,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsPauseOperations",
       "arguments": {
         "projectId": "project-1",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -33676,7 +33676,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "path": "dist/agent-output.md",
@@ -33905,7 +33905,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsDomainsOperations",
       "arguments": {
         "idOrName": "Example Name",
         "domain": "www.example.com",
@@ -33941,7 +33941,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsEnvOperations",
       "arguments": {
         "idOrName": "prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA",
         "id": "XMbOEya1gUUO1ir4",
@@ -34079,7 +34079,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart1",
+      "owner": "dev.octri.showcase.vercel.methods.VcrRepositoryOperations",
       "arguments": {
         "projectId": "project-1",
         "idOrName": "Example Name",
@@ -34262,7 +34262,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrBlobsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -34298,7 +34298,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrManifestsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -34660,7 +34660,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsPromoteOperations",
       "arguments": {
         "projectId": "project-1",
         "deploymentId": "deployment-1",
@@ -34693,7 +34693,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsRollbackOperations",
       "arguments": {
         "projectId": "project-1",
         "deploymentId": "deployment-1",
@@ -35052,7 +35052,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "cmdId": "cmd_abc123",
@@ -35133,7 +35133,7 @@
         "sandboxes"
       ],
       "mode": "stream",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "cmdId": "cmd_abc123",
@@ -35700,7 +35700,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -36172,7 +36172,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsUnpauseOperations",
       "arguments": {
         "projectId": "project-1",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -36591,7 +36591,7 @@
         "vcr"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.VcrPart2",
+      "owner": "dev.octri.showcase.vercel.methods.VcrBlobsOperations",
       "arguments": {
         "teamSlug": "team-slug",
         "projectSlug": "project-slug",
@@ -38560,7 +38560,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsMicrofrontendsOperations",
       "arguments": {
         "projectId": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -40572,7 +40572,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsOperations",
       "arguments": {
         "idOrName": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -42735,7 +42735,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsDomainsOperations",
       "arguments": {
         "idOrName": "Example Name",
         "domain": "www.example.com",
@@ -42796,7 +42796,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsProtectionBypassOperations",
       "arguments": {
         "idOrName": "Example Name",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -42855,7 +42855,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart2",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsRollbackOperations",
       "arguments": {
         "projectId": "project-1",
         "deploymentId": "deployment-1",
@@ -43241,7 +43241,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesOperations",
       "arguments": {
         "name": "my-sandbox",
         "projectId": "project-1",
@@ -43464,7 +43464,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -43751,63 +43751,9 @@
       }
     },
     {
-      "id": "updateTeamMember:updateTeamMember",
-      "operationId": "updateTeamMember",
-      "methodName": "updateTeamMember",
-      "namespace": [
-        "teams"
-      ],
-      "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.Teams",
-      "arguments": {
-        "uid": "ndfasllgPyCtREAqxxdyFKb",
-        "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
-        "confirmed": true,
-        "role": "VIEWER",
-        "teamPermissions": [
-          "CreateProject",
-          "FullProductionDeployment"
-        ],
-        "projects": [
-          {
-            "projectId": "prj_ndlgr43fadlPyCtREAqxxdyFK",
-            "role": "ADMIN"
-          }
-        ],
-        "joinedFrom": {
-          "ssoUserId": null
-        }
-      },
-      "wireNames": {
-        "uid": "uid",
-        "teamId": "teamId",
-        "confirmed": "confirmed",
-        "role": "role",
-        "teamPermissions": "teamPermissions",
-        "projects": "projects",
-        "joinedFrom": "joinedFrom"
-      },
-      "argumentOrder": [
-        "uid",
-        "teamId",
-        "confirmed",
-        "role",
-        "teamPermissions",
-        "projects",
-        "joinedFrom"
-      ],
-      "response": {
-        "kind": "json",
-        "expected": {
-          "id": "id-1"
-        },
-        "byteLength": 0
-      }
-    },
-    {
-      "id": "updateTeams:updateTeams",
-      "operationId": "updateTeams",
-      "methodName": "updateTeams",
+      "id": "updateTeam:updateTeam",
+      "operationId": "updateTeam",
+      "methodName": "updateTeam",
       "namespace": [
         "teams"
       ],
@@ -44237,6 +44183,60 @@
       }
     },
     {
+      "id": "updateTeamMember:updateTeamMember",
+      "operationId": "updateTeamMember",
+      "methodName": "updateTeamMember",
+      "namespace": [
+        "teams"
+      ],
+      "mode": "normal",
+      "owner": "dev.octri.showcase.vercel.methods.Teams",
+      "arguments": {
+        "uid": "ndfasllgPyCtREAqxxdyFKb",
+        "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
+        "confirmed": true,
+        "role": "VIEWER",
+        "teamPermissions": [
+          "CreateProject",
+          "FullProductionDeployment"
+        ],
+        "projects": [
+          {
+            "projectId": "prj_ndlgr43fadlPyCtREAqxxdyFK",
+            "role": "ADMIN"
+          }
+        ],
+        "joinedFrom": {
+          "ssoUserId": null
+        }
+      },
+      "wireNames": {
+        "uid": "uid",
+        "teamId": "teamId",
+        "confirmed": "confirmed",
+        "role": "role",
+        "teamPermissions": "teamPermissions",
+        "projects": "projects",
+        "joinedFrom": "joinedFrom"
+      },
+      "argumentOrder": [
+        "uid",
+        "teamId",
+        "confirmed",
+        "role",
+        "teamPermissions",
+        "projects",
+        "joinedFrom"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "id": "id-1"
+        },
+        "byteLength": 0
+      }
+    },
+    {
       "id": "updateVercelCiRepositorySettings:updateVercelCiRepositorySettings",
       "operationId": "updateVercelCiRepositorySettings",
       "methodName": "updateVercelCiRepositorySettings",
@@ -44488,7 +44488,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsAvatarOperations",
       "arguments": {
         "idOrName": "Example Name",
         "teamId": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
@@ -46502,7 +46502,7 @@
         "projects"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.ProjectsPart1",
+      "owner": "dev.octri.showcase.vercel.methods.ProjectsDomainsOperations",
       "arguments": {
         "idOrName": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
         "domain": "example.com",
@@ -46546,7 +46546,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart1",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "cmdId": "cmd_abc123",
         "sessionId": "sbx_abc123",
@@ -46603,7 +46603,7 @@
         "sandboxes"
       ],
       "mode": "normal",
-      "owner": "dev.octri.showcase.vercel.methods.SandboxesPart2",
+      "owner": "dev.octri.showcase.vercel.methods.SandboxesSessionsOperations",
       "arguments": {
         "sessionId": "sbx_abc123",
         "xCwd": "/home/vercel-sandbox",
