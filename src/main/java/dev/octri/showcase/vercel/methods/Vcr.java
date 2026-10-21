@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 import javax.annotation.Nullable;
 
-public class Vcr extends VcrPart2 {
+public class Vcr extends VcrTagsOperations {
 
 
     public static class CreateRepositoryResponse {

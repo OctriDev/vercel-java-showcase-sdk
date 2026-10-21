@@ -7364,8 +7364,8 @@ public class Vercel {
          *
          * Update the information of a Team specified by the `teamId` parameter. The request body should contain the information that will be updated on the Team.
          */
-        public Team update(Teams.UpdateTeamsRequest request) {
-            return Teams.updateTeams(this.clientConfig, request);
+        public Team update(Teams.UpdateTeamRequest request) {
+            return Teams.updateTeam(this.clientConfig, request);
         }
 
         /**
@@ -7373,8 +7373,8 @@ public class Vercel {
          *
          * Update the information of a Team specified by the `teamId` parameter. The request body should contain the information that will be updated on the Team.
          */
-        public Team update(Teams.UpdateTeamsRequest request, SdkConfig.RequestOptions options) {
-            return Teams.updateTeams(this.clientConfig, request, options);
+        public Team update(Teams.UpdateTeamRequest request, SdkConfig.RequestOptions options) {
+            return Teams.updateTeam(this.clientConfig, request, options);
         }
 
         /**
